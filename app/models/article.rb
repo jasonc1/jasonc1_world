@@ -4,5 +4,5 @@ class Article < ActiveRecord::Base
 	vaildates_presence_of :title, :content
 
 	scope :active, where('active = ?', true)
-  	scope :alphabetical, order('name')
+  	scope :alphabetical, order('title')
 end
